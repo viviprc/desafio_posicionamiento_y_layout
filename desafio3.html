@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Banderas</title>
+<style media="screen" type="text/css">
+html, body {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+}
+.banderas {
+    width: 1000px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.row {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.bandera {
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+}
+.espana {
+    background-color: red;
+}
+.espana :first-child {
+    width: 300px;
+    height: 70px;
+    background-color: yellow;
+    position: relative;
+    top: 65px;
+}
+.b-espana {
+    position: relative;
+    top: 135px;
+    left: 0;
+}
+.dinamarca {
+    background-color: red;
+}
+.dinamarca :first-child {
+    width: 300px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    top: 90px;
+}
+.dinamarca :nth-child(2) {
+    width: 20px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    bottom: 20px;
+    left: 90px;
+}
+.b-dinamarca {
+    position: relative;
+    left: 0;
+    bottom: 15px;
+}
+.emiratos :first-child {
+    width: 80px;
+    height: 200px;
+    background-color: red;
+}
+.emiratos :nth-child(2) {
+    width: 220px;
+    height: 67px;
+    background-color: green;
+    position: relative;
+    left: 80px;
+    bottom: 200px;
+}
+.emiratos :nth-child(3) {
+    width: 220px;
+    height: 67px;
+    background-color: black;
+    position: relative;
+    left: 80px;
+    bottom: 134px;
+}
+.b-emiratos {
+    position: relative;
+    left: 0;
+    bottom: 130px;
+}
+.japon :first-child {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    border-radius: 50%;
+}
+.b-japon {
+    position: relative;
+    top: 105px;
+    left: 0;
+}
+
+</style>
+</head>
+<body>
+    <div class="banderas">
+        <div class="first row">
+            <div class="bandera espana">
+                <div></div>
+                <h3 class="b-espana">España</h3>
+            </div>
+            <div class="bandera dinamarca">
+                <div></div>
+                <div></div>
+                <h3 class="b-dinamarca">Dinamarca</h3>
+            </div>
+        </div>
+        <div class="second row">
+            <div class="bandera emiratos">
+                <div></div>
+                <div></div>
+                <div></div>
+                <h3 class="b-emiratos">Emiratos Árabes</h3>
+            </div>
+            <div class="bandera japon">
+                <div></div>
+                <h3 class="b-japon">Japón</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
